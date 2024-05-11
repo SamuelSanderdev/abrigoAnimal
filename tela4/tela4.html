@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa de Abrigos</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // This example creates a simple Google Map centered at Cidade Exemplo, RS.
+      // Note: You need to replace 'YOUR_GOOGLE_MAPS_API_KEY' with your actual API key.
+      function initMap() {
+        // Simulando dados de abrigos - idealmente, estes dados viriam de um servidor
+        const abrigos = [
+          {
+            nome: "Abrigo Animal",
+            endereco: {
+              rua: "Rua Principal",
+              numero: "123",
+              bairro: "Centro",
+              referencia: "Próximo ao mercado",
+              cep: "99999-999",
+              cidade: "Cidade Exemplo",
+              UF: "RS",
+              lat: -30.0346,  // Latitude do abrigo
+              lng: -51.2177   // Longitude do abrigo
+            },
+            // ... outros dados do abrigo
+          },
+          // Adicione mais abrigos aqui
+        ];
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: { lat: -30.0346, lng: -51.2177 }, // Coordenadas de Cidade Exemplo, RS
+        });
+
+        // Add markers for each abrigo location
+        abrigos.forEach(abrigo => {
+          new google.maps.Marker({
+            position: { lat: abrigo.endereco.lat, lng: abrigo.endereco.lng }, 
+            map,
+            title: abrigo.nome,
+          });
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap">
+    </script>
+  </body>
+</html>
