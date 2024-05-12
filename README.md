@@ -1,10 +1,4 @@
-SOS Abrigo Animal
+Descrição: SOS Abrigo Animal
 
-O objetivo do projeto foi encontrar uma soluçao do problema da falta a falta de informação na localização de abrigos,  com vagas disponíveis, para animais domésticos. Em momentos de calamidade publica, como a atual enchente do Rio Grande do Sul, aplicado no âmbito municipal.
-
-Para resolver esse problema foi utilizado: 
-IA Studio Gemini, onde atraves dos comandos de prompts executados, obtive o resultado da criaçao de um sistema onde possui o cadastro de abrigos, cadastro do cidadao, com resultado da busca de abrigos disponiveis com a localizaçao.
-Tecnologias utilizadas:
-HTML;
-CSS;
-Javascript;
+Sendo a comunicação uma das principais ferramentas da humanidade, este projeto visa solucionar o problema da falta de informação na localização de abrigos,  com vagas disponíveis, para animais domésticos. Em momentos de calamidade publica, como a atual enchente do Rio Grande do Sul, aplicado no âmbito municipal.
+Para isto, fez-se uso da IA Generativa (Google AI Studio Gemini, HTML, CSS, Javascript) para o desenvolvimento, do que pode ser o inicio de uma forte e integrada comunicação entre a população e os abrigos para animais domésticos em situação de vulnerabilidade. De inicio, a solução conta com uma interface de cadastro para os abrigos, que a partir de informações objetivas faz sua identificação, apresenta sua geolocalização, informa sua capacidade máxima e a quantidade de cagas disponíveis. Ha também a interface do cidadão, que por meio de um cadastro simples de identificação, informa sua localização atual e informa a quantidade de vagas que deseja para os animais. A partir desses insumos (entradas) tem-se como resultado (saída), a correlação de quais abrigos, no município, estão ativos e com vagas disponíveis para receber os animais fisicamente.  A solução tem grande potencial de ser posta em produção e de ser ampliada, para que novas versões contemplem, por exemplo, cadastro de estoque, donativos, voluntários.. dentre outras fases da ajuda humanitária em prol aos animais desabrigados. 
